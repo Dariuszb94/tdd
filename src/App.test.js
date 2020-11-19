@@ -1,11 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
-import App from "./App";
+import { shallow } from "enzyme";
+import Counter from "./Counter";
 
 describe("Counter Testing", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<App />);
+    wrapper = shallow(<Counter />);
   });
 
   test("render the title of counter", () => {
